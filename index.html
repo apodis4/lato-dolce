@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+
+        <title></title>
+        
+        <!-- Reset css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Custom style-->
+        <link rel="stylesheet" href="style.css">
+        <!-- Google font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    </head>
+    <body>
+
+        <div class="container  clearfix">
+            <header class="clearfix  header">
+                <a href="" class="header__logo">Mio tema</a>
+                <a href="#" class="header__icon-bar"><span></span><span></span><span></span></a>
+                <ul class="header__menu">
+                    <li class="header__menu__item"><a href="">Link</a></li>
+                    <li class="header__menu__item"><a href="">Link</a></li>
+                    <li class="header__menu__item"><a href="">Link</a></li>
+                    <li class="header__menu__item"><a href="">Link</a></li>
+                    <li class="header__menu__item"><a href="">Link</a></li>
+                </ul>
+            </header>
+
+            <h1 class="main-title">Il mio primo tema con wordpress</h1>
+
+            <div class="content">
+                <article class="post">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde saepe dolor, cum maxime itaque ducimus ab laboriosam expedita inventore atque possimus, quam culpa tenetur hic natus, quia eos voluptates!</p>
+                </article>
+                <article class="post">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde saepe dolor, cum maxime itaque ducimus ab laboriosam expedita inventore atque possimus, quam culpa tenetur hic natus, quia eos voluptates!</p>
+                </article>
+                <article class="post">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde saepe dolor, cum maxime itaque ducimus ab laboriosam expedita inventore atque possimus, quam culpa tenetur hic natus, quia eos voluptates!</p>
+                </article>
+                <article class="post">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde saepe dolor, cum maxime itaque ducimus ab laboriosam expedita inventore atque possimus, quam culpa tenetur hic natus, quia eos voluptates!</p>
+                </article>
+                <article class="post">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde saepe dolor, cum maxime itaque ducimus ab laboriosam expedita inventore atque possimus, quam culpa tenetur hic natus, quia eos voluptates!</p>
+                </article>
+                <article class="post">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde saepe dolor, cum maxime itaque ducimus ab laboriosam expedita inventore atque possimus, quam culpa tenetur hic natus, quia eos voluptates!</p>
+                </article>
+            </div>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <ul>
+                        <li><a href="">Latest article</a></li>
+                        <li><a href="">Latest article</a></li>
+                        <li><a href="">Latest article</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Jquery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $(".header__icon-bar").click(function(e){
+                    $(".header__menu").toggleClass('show-menu');
+                    e.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>
