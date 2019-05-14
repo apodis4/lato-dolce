@@ -34,6 +34,8 @@ a { color: #21aabd; }
 .widget ul li { padding: 0; list-style-type: none; }
 .widget ul li a { text-decoration: none; display: block; border-bottom: 1px solid #eeeeee; padding: 15px 15px; }
 
+footer { padding: 10px 30px; }
+
 /*------------------------------------------
 Tablet
 ------------------------------------------*/
