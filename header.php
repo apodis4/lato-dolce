@@ -23,13 +23,16 @@
             <header class="clearfix  header">
                 <a href="" class="header__logo">Mio tema</a>
                 <a href="#" class="header__icon-bar"><span></span><span></span><span></span></a>
-                <ul class="header__menu">
-                    <li class="header__menu__item"><a href="">Link</a></li>
-                    <li class="header__menu__item"><a href="">Link</a></li>
-                    <li class="header__menu__item"><a href="">Link</a></li>
-                    <li class="header__menu__item"><a href="">Link</a></li>
-                    <li class="header__menu__item"><a href="">Link</a></li>
-                </ul>
+
+                <?php // Main navigation
+                    wp_nav_menu( array( 
+                        'theme_location' => 'header', // corrisponde al valore nella funzione register_nav_menus nel file functions.php
+                        'depth' => 2, // permette menu a tendina
+                        'container' => false,
+                        'menu_class' => 'header__menu'
+                    ) ); 
+                ?>
+
             </header>
 
             <h1 class="main-title">Il mio primo tema con wordpress</h1>

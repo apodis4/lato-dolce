@@ -18,8 +18,8 @@ a { color: #21aabd; }
 .header { padding: 20px; background: #333333; }
 .header__logo { float: left; color: #ffffff; text-decoration: none; }
 .header__menu { float: right; padding: 0; margin: 0; list-style-type: none; }
-.header__menu__item { display: inline-block; }
-.header__menu__item a { padding: 5px 10px; color: #ffffff; text-decoration: none; }
+.header__menu .menu-item { display: inline-block; }
+.header__menu .menu-item a { padding: 5px 10px; color: #ffffff; text-decoration: none; }
 
 .header__icon-bar { display: none; }
 .header__icon-bar span { display: block; background-color: #ffffff; height: 2px; width: 23px; margin-bottom: 5px; }
@@ -56,8 +56,8 @@ Smartphone
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
     }
-    .header__menu__item { display: block; width: 100%; }
-    .header__menu__item a { display: block; padding: 10px 15px; border-bottom: 1px solid #666666; }
+    .header__menu .menu-item { display: block; width: 100%; }
+    .header__menu .menu-item a { display: block; padding: 10px 15px; border-bottom: 1px solid #666666; }
 
     .header__icon-bar { float: right; display: block; }
     .show-menu { height: 300px; overflow: auto; }
