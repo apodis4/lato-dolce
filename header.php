@@ -21,7 +21,7 @@
 
         <div class="container  clearfix">
             <header class="clearfix  header">
-                <a href="" class="header__logo">Mio tema</a>
+                <a href="" class="header__logo"><?php bloginfo( 'name' ); ?></a>
                 <a href="#" class="header__icon-bar"><span></span><span></span><span></span></a>
 
                 <?php // Main navigation
@@ -35,4 +35,4 @@
 
             </header>
 
-            <h1 class="main-title">Il mio primo tema con wordpress</h1>
+            <h1 class="main-title"><?php bloginfo( 'description' ); ?> </h1>
