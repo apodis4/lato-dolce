@@ -1,10 +1,10 @@
         
             <div class="clearfix"></div>
             <footer>
-                <p>mio footer</p>
+                <p>&copy; Copyright <?php echo date("o"); ?> - <?php bloginfo( 'name' ); ?> </p>
             </footer>
         
-        </div>
+        </div><!--/ .container -->
         
         <?php wp_footer(); ?>
 
