@@ -28,10 +28,27 @@ if (!function_exists( 'latodolce_setup' )){
 }
 add_action( 'after_setup_theme', 'latodolce_setup' );
 
+/* Register sidebars */
+/* --------------------------------------------- */
+if (!function_exists( 'latodolce_sidebars' )) {
+    function latodolce_sidebars() {
+        register_sidebar( array( 
+            'name' => 'Primary',
+            'id' => 'primary',
+            'description' => 'full sidebar',
+            'before_widget' => '<div id="%1$s" class="widget  %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>'
+        ) );
+    }
+}
+add_action( 'widgets_init', 'latodolce_sidebars' );
+
 /* Include styles and script */
 /* --------------------------------------------- */
-if (!function_exists( 'latodolce_styles_scripts' )){
-    function latodolce_styles_scripts(){
+if (!function_exists( 'latodolce_styles_scripts' )) {
+    function latodolce_styles_scripts() {
 
         // Custom scripts
         wp_enqueue_script( 'latodolce-scripts', get_template_directory_uri().'/js/scripts.js', array('jquery'), '', true );
