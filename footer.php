@@ -1,7 +1,7 @@
         
             <div class="clearfix"></div>
             <footer>
-                <p>&copy; Copyright <?php echo date("o"); ?> - <?php bloginfo( 'name' ); ?> </p>
+                <p><?php esc_html_e( '&copy; Copyright', 'latodolce' ); ?> <?php echo date("o"); ?> - <?php bloginfo( 'name' ); ?> </p>
             </footer>
         
         </div><!--/ .container -->

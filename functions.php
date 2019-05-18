@@ -33,9 +33,9 @@ add_action( 'after_setup_theme', 'latodolce_setup' );
 if (!function_exists( 'latodolce_sidebars' )) {
     function latodolce_sidebars() {
         register_sidebar( array( 
-            'name' => 'Primary',
+            'name' => esc_html__( 'Primary', 'latodolce' ),
             'id' => 'primary',
-            'description' => 'full sidebar',
+            'description' => esc_html__( 'Full sidebar', 'latodolce' ),
             'before_widget' => '<div id="%1$s" class="widget  %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h3>',

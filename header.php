@@ -7,13 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="description" content="<?php bloginfo( 'description' ); ?>">
-
-        <!-- Reset css-->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
-        <!-- Custom style-->
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <!-- Google font-->
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"> -->
     
         <?php wp_head(); ?>
     </head>
@@ -45,6 +38,6 @@
                 
             <?php } else if( is_search()) { ?>
 
-                <h1 class="main-title">Risultati della ricerca per: <strong><i><?php echo $s; ?></i></strong></h1>
+                <h1 class="main-title"><?php esc_html_e( 'Search results for: ', 'latodolce' ); ?><strong><i><?php echo $s; ?></i></strong></h1>
 
             <?php } ?>

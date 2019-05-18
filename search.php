@@ -37,7 +37,7 @@
         
     <?php else: ?>
 
-        <h3>Nessun post trovato....</h3>
+        <h3><?php esc_html_e( 'No posts match the searched criteri....', 'latodolce' ); ?></h3>
 
     <?php endif; ?>
 

@@ -23,7 +23,7 @@
 
                 <?php $post_tags = wp_get_post_tags( $post -> ID );
                     if(!empty($post_tags)) {?>
-                        <p class="tag"><small>Tags: </small><br><?php the_tags( '', ',', '' ) ?></p>
+                        <p class="tag"><small><?php esc_html_e( 'Tags: ', 'latodolce' ); ?></small><br><?php the_tags( '', ',', '' ) ?></p>
                 <?php } ?>        
                 
                 <div class="comments">
@@ -47,7 +47,7 @@
         
     <?php else: ?>
 
-        <h3>Nessun post trovato....</h3>
+        <h3><?php esc_html_e( 'No posts match the searched criteri....', 'latodolce' ); ?></h3>
 
     <?php endif; ?>
 
