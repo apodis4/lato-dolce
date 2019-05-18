@@ -35,4 +35,6 @@
 
             </header>
 
-            <h1 class="main-title"><?php bloginfo( 'description' ); ?> </h1>
+            <?php if( is_front_page() ) { ?>
+                <h1 class="main-title"><?php bloginfo( 'description' ); ?> </h1>
+            <?php } ?>

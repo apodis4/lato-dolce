@@ -24,16 +24,34 @@ a { color: #21aabd; }
 .header__icon-bar { display: none; }
 .header__icon-bar span { display: block; background-color: #ffffff; height: 2px; width: 23px; margin-bottom: 5px; }
 
+/*------------------------------------------
+Home
+------------------------------------------*/
 .main-title { padding: 50px; text-align: center; background-color: #21aabd; color: #ffffff; margin: 0; font-weight: 300; font-size: 50px; }
 
+/*------------------------------------------
+Index, Single, Page
+------------------------------------------*/
 .content { width: 70%; float: left; }
-.post { padding: 40px; border-bottom: 1px solid #eeeeee; }
+    .content__title { font-size: 42px; }
+    .post { padding: 40px; border-bottom: 1px solid #eeeeee; }
+    .page { padding: 40px; }
 
+/*------------------------------------------
+Sidebar
+------------------------------------------*/
 .sidebar { width: 30%; float: left; }
+
+/*------------------------------------------
+Widget
+------------------------------------------*/
 .widget { padding: 40px; }
 .widget ul li { padding: 0; list-style-type: none; }
 .widget ul li a { text-decoration: none; display: block; border-bottom: 1px solid #eeeeee; padding: 15px 15px; }
 
+/*------------------------------------------
+Footer
+------------------------------------------*/
 footer { padding: 10px 30px; }
 
 /*------------------------------------------
@@ -70,8 +88,9 @@ Smartphone
 
 }
 
-
-
+/*------------------------------------------
+Utilities
+------------------------------------------*/
 .clearfix:after {
     visibility: hidden;
     display: block;
