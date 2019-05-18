@@ -56,6 +56,8 @@ if (!function_exists( 'latodolce_styles_scripts' )) {
         // Font
         wp_enqueue_style( 'latodolce-sourcesanspro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' );
 
+        // Reset css
+        wp_enqueue_style( 'latodolce-normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' );
         // Custom styles
         wp_enqueue_style( 'latodolce', get_template_directory_uri().'/style.css' );
 

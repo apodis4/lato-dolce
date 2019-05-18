@@ -41,6 +41,10 @@
 
             <?php } else if( is_category() || is_tag()) { ?>
 
-                <h1 class="huge"><?php echo single_cat_title() ?></h1>
+                <h1 class="main-title"><?php echo single_cat_title() ?></h1>
                 
+            <?php } else if( is_search()) { ?>
+
+                <h1 class="main-title">Risultati della ricerca per: <strong><i><?php echo $s; ?></i></strong></h1>
+
             <?php } ?>
