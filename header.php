@@ -36,5 +36,11 @@
             </header>
 
             <?php if( is_front_page() ) { ?>
+
                 <h1 class="main-title"><?php bloginfo( 'description' ); ?> </h1>
+
+            <?php } else if( is_category() || is_tag()) { ?>
+
+                <h1 class="huge"><?php echo single_cat_title() ?></h1>
+                
             <?php } ?>

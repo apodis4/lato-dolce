@@ -53,6 +53,8 @@ Index, Single, Page
     .comment-form-url label { width: 100%; display: inline-block; } 
     .form-submit input { background: #333333; color: #ffffff; border: none; font-size: 16px; padding: 10px 15px; }
 
+    /* Categories, Tags */
+    .huge { padding: 50px; text-align: center; background-color: #21aabd; color: #ffffff; margin: 0; font-weight: 300; font-size: 50px; }
 /*------------------------------------------
 Sidebar
 ------------------------------------------*/
