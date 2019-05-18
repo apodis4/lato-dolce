@@ -36,6 +36,22 @@ Index, Single, Page
     .content__title { font-size: 42px; }
     .post { padding: 40px; border-bottom: 1px solid #eeeeee; }
     .page { padding: 40px; }
+    .tag a { background: #666666; color: #ffffff; padding: 5px 10px; text-decoration: none; display: inline-block; margin-top: 5px; }
+
+    /* Comments */
+    .comments { margin: 40px 0; border-top: 1px solid #eeeeee; }
+
+    .comment-body { margin: 40px 0; }
+    .comment-author.vcard img { border-radius: 100%; }
+
+    .comment-form-comment textarea { background: #eeeeee; width: 100%; border: 1px solid #dddddd; }
+    .comment-form-author input,
+    .comment-form-email input,
+    .comment-form-url input { background: #eeeeee; max-width: 300%; border: 1px solid #dddddd; padding: 5px; } 
+    .comment-form-author label,
+    .comment-form-email label,
+    .comment-form-url label { width: 100%; display: inline-block; } 
+    .form-submit input { background: #333333; color: #ffffff; border: none; font-size: 16px; padding: 10px 15px; }
 
 /*------------------------------------------
 Sidebar

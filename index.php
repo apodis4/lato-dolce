@@ -3,22 +3,28 @@
 <div class="content">
 
     <?php if ( have_posts() ) : ?>
+
         <?php while ( have_posts() ) : the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
                 <h2>
                     <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
                     </a>
                 </h2>
+
                 <p>
                     <i class="fa fa-clock-o"></i> <?php the_time( 'j M , Y' ); ?> 
                     <i class="fa fa-humb-tack"></i><?php the_category( ',' ); ?>
                 </p>
+
                 <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail( 'latodolce-single', array('class' => 'img-res', 'alt' => get_the_title())); ?>
                 </a>
+
                 <?php the_excerpt(); ?>
+                
             </article>
 
         <?php endwhile; ?>
@@ -43,7 +49,9 @@
 </div>
 
 <aside class="sidebar">
+
     <?php get_sidebar(); ?>
+
 </aside>
 
 <?php get_footer(); ?>
