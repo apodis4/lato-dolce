@@ -65,6 +65,12 @@ if (!function_exists( 'latodolce_styles_scripts' )) {
 }
 add_action( 'wp_enqueue_scripts', 'latodolce_styles_scripts' );
 
-
+/* Oembed responsive */
+/* --------------------------------------------- */
+add_filter( 'embed_oembed_html', 'latodolce_oembed_filter', 10, 4 );
+function latodolce_oembed_filter($html, $url, $attr, $post_ID) {
+    $return = '<figure class="video-container"'.$html.'</figure>';
+    return $return;
+}
 
 ?>

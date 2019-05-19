@@ -14,6 +14,22 @@ General
 input { border: 1px solid #dddddd; }
 input[type=submit] { background: #333333; color: #ffffff; border: none; }
 
+figure { margin: 0; }
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /*------------------------------------------
 Layout
 ------------------------------------------*/
@@ -41,6 +57,7 @@ Index, Single, Page
 .content { width: 70%; float: left; }
     .content__title { font-size: 42px; }
     .post { padding: 40px; border-bottom: 1px solid #eeeeee; }
+    .post img { max-width: 100%; height: auto; }
     .page { padding: 40px; }
     .tag a { background: #666666; color: #ffffff; padding: 5px 10px; text-decoration: none; display: inline-block; margin-top: 5px; }
 
@@ -58,6 +75,23 @@ Index, Single, Page
     .comment-form-email label,
     .comment-form-url label { width: 100%; display: inline-block; } 
     .form-submit input { background: #333333; color: #ffffff; border: none; font-size: 16px; padding: 10px 15px; }
+
+    /* Pagination */
+    .pagination { padding: 40px; }
+    .pagination a,
+    .pagination span { padding: 10px 15px; border: 1px solid #dddddd; text-decoration: none; }
+    .pagination a:hover { background: #dddddd; }
+
+    /* Caption Images */
+    .wp-caption { margin-bottom: 20px; padding: 10px; max-width: 97%; border: 1px solid #dddddd; text-align: center; }
+    .wp-caption img { margin: 0; padding: 0; width: 100%!important; height: auto; border: 0 none; }
+    .wp-caption p.wp-caption-text { margin: 0; padding: 8px; font-size: 1em; line-height: 17px; }
+
+    /* Gallery */
+    .gallery { float: left; margin: 20px 0; width: 103.55%; }
+    .gallery-item { float: left; width: 33.333333%; text-align: center; }
+    .gallery img { margin: 0 5%; width: 90%; height: auto; border: none!important; }
+    .gallery-caption { width: 90%; margin: 10px 0 0 0; }
 
 /*------------------------------------------
 Sidebar
@@ -105,6 +139,9 @@ Smartphone
     /* content layout */
     .main-title { font-size: 32px; }
     .content, .sidebar { width: 100%; }
+
+    /* Gallery */
+    .gallery-caption { font-size: 12px; }
 
 }
 

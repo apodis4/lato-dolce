@@ -14,7 +14,7 @@
 
         <div class="container  clearfix">
             <header class="clearfix  header">
-                <a href="" class="header__logo"><?php bloginfo( 'name' ); ?></a>
+                <a href="<?php echo home_url(); ?>" class="header__logo"><?php bloginfo( 'name' ); ?></a>
                 <a href="#" class="header__icon-bar"><span></span><span></span><span></span></a>
 
                 <?php // Main navigation
